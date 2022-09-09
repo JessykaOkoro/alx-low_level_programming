@@ -14,17 +14,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 5)
+	else if (n == 0)
 	{
-		printf("%d is five\n", n);
+		printf("%d is zero\n", n);
 	}
-	else
+	else if (n < 0)
 	{
-		printf("%d is negative\n", n);
+		printf("%d is negative\n", n)i;
 	}
 	return (0);
 }
