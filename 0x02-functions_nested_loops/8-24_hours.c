@@ -1,12 +1,12 @@
 #include "main.h"
 
  /**
-  * jack_bauer - prints minutes of the day
+  * jack_bauer - prints minutes of the day and to also havd no return val
   *
+  * Return: 0
   *
-  * Return: no return
   */
-void jack_bauer(void)
+voidjack_bauer(void)
 {
 	int i;
 	int j;
