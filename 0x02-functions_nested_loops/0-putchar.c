@@ -1,20 +1,22 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * _putchar - prints nane
+ * main - writes the character c to stdout
  *
- * Return: Always 0
- *
+ * Return: on success 1
+ * On error -1 is returned and errno is set appropriately
  */
-int _putchar(char c)
+int main (void)
 {
-	char *sh = "_putchar";
-
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
+	putchar('_')
+	putchar('p')
+	putchar('u')
+	putchar('t')
+	putchar('c'
+	putchar('h')
+	putchar('a')
+	putchar('r')
+	putchar('\n')
 	return (0);
 }
+
