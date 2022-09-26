@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_diagsums - prints the sum of the two
@@ -10,14 +10,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, sum1 = 0, sum2 = 0;
-
-	for (i = 0; i < (size * size); i++)
+	int b, sum1 = 0, sum2 = 0;
+	
+	for (b = 0; b < size; b++)
 	{
-		if (i % (size + 1) == 0
-			sum1 += *(a + i);
-		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-			sum2 += *(a + i);
+		sum1 += a[(size + 1) * b];
+		sum2 += a[(size - 1) * (b + 1)];
 	}
+
 	printf("%d, %d\n", sum1, sum2);
 }
+	
